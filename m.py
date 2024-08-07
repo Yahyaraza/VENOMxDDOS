@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5588464519"]
+    admin_id = ["2030918750"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -184,7 +184,7 @@ def remove_user(message):
                         file.write(f"{user_id}\n")
                 response = f"User {user_to_remove} removed successfully 👍."
             else:
-                response = f"User {user_to_remove} not list me hai hi nahi  ❌."
+                response = f"User {user_to_remove} list me hai hi nahi  ❌."
         else:
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @venomXcrazy ❄."
+        response = "You have not purchased yet purchase now from :- @NOOBLOWNER ❄."
     bot.reply_to(message, response)
 
 
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @venomXcrazy
-Official Channel :- https://t.me/V3NOM_CH3AT
+Buy From :- @NOOBLOWNER
+Official Channel :- https://t.me/CONFIG_MASTER0
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
